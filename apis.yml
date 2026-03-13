@@ -1,0 +1,31 @@
+aid: microsoft-azure-search
+url: https://raw.githubusercontent.com/api-evangelist/microsoft-azure-search/refs/heads/main/apis.yml
+apis:
+  - aid: microsoft-azure-search:azure-ai-search-api
+    name: Azure AI Search API
+    tags:
+      - Search\n      - AI Search\n      - Vector Search\n      - Full Text Search
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    baseURL: https://{service}.search.windows.net/
+    humanURL: https://learn.microsoft.com/en-us/rest/api/searchservice/
+    properties:
+      - url: https://learn.microsoft.com/en-us/rest/api/searchservice/
+        type: Documentation
+    description: >-
+      Azure AI Search provides REST APIs for creating and managing search indexes, loading documents, running full-text and vector queries, configuring AI enrichment pipelines with skillsets, and managing indexers for automatic data ingestion from Azure data sources.
+common:
+  - type: Portal
+    url: https://portal.azure.com/
+  - type: Pricing
+    url: https://azure.microsoft.com/en-us/pricing/
+  - type: Documentation
+    url: https://learn.microsoft.com/en-us/azure/
+  - type: Terms of Service
+    url: https://www.microsoft.com/en-us/legal/terms-of-use
+  - type: Privacy Policy
+    url: https://privacy.microsoft.com/en-us/privacystatement
+  - type: Support
+    url: https://support.microsoft.com/
+maintainers:
+  - name: Kin Lane
+    email: kin@apievangelist.com
