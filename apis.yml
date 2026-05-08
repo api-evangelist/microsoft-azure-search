@@ -35,6 +35,8 @@ apis:
       - Skillsets
       - Vector Search
     properties:
+      - url: openapi/microsoft-azure-search-openapi.yml
+        type: OpenAPI
       - type: Documentation
         url: https://learn.microsoft.com/en-us/rest/api/searchservice/
       - type: Authentication
