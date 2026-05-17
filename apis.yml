@@ -68,21 +68,21 @@ common:
     url: https://azure.microsoft.com/en-us/pricing/details/search/
   - type: Documentation
     url: https://learn.microsoft.com/en-us/azure/search/
-  - type: Getting Started
+  - type: GettingStarted
     url: https://learn.microsoft.com/en-us/azure/search/search-get-started-portal
   - type: SDKs
     url: https://learn.microsoft.com/en-us/azure/search/search-howto-dotnet-sdk
-  - type: Status
+  - type: StatusPage
     url: https://azure.status.microsoft/en-us/status
-  - type: Terms of Service
+  - type: TermsOfService
     url: https://www.microsoft.com/en-us/legal/terms-of-use
-  - type: Privacy Policy
+  - type: PrivacyPolicy
     url: https://privacy.microsoft.com/en-us/privacystatement
   - type: Support
     url: https://support.microsoft.com/
   - type: Blog
     url: https://azure.microsoft.com/en-us/blog/product/azure-cognitive-search/
-  - type: Stack Overflow
+  - type: StackOverflow
     url: https://stackoverflow.com/questions/tagged/azure-cognitive-search
 maintainers:
   - FN: Kin Lane
