@@ -5,7 +5,7 @@ description: >-
   Azure AI Search (formerly Azure Cognitive Search) is a cloud search service with built-in AI capabilities for
   enriching content and enabling vector and semantic search over heterogeneous data. It indexes content from Azure data
   sources and supports full-text, faceted, geospatial, vector, and hybrid retrieval.
-image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - AI Search
   - Cognitive Search
@@ -23,7 +23,7 @@ apis:
       Azure AI Search provides REST APIs for creating and managing search indexes, loading documents, running full-text
       and vector queries, configuring AI enrichment pipelines with skillsets, and managing indexers for automatic data
       ingestion from Azure data sources.
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://learn.microsoft.com/en-us/rest/api/searchservice/
     baseURL: https://{search-service}.search.windows.net/
     tags:
@@ -46,7 +46,7 @@ apis:
     description: >-
       The management REST API provides operations for creating and managing Azure AI Search service instances, scaling
       replicas and partitions, and managing keys and shared private link resources.
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://learn.microsoft.com/en-us/rest/api/searchmanagement/
     baseURL: https://management.azure.com/
     tags:
