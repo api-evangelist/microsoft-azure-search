@@ -1,0 +1,92 @@
+openapi: 3.1.0
+info:
+  title: Azure AI Search REST Documents API
+  description: Azure AI Search (formerly Cognitive Search) REST API enables managing indexes, indexers, data sources, skillsets, synonym maps, and querying documents.
+  version: '2024-07-01'
+servers:
+- url: https://{search-service}.search.windows.net
+  variables:
+    search-service:
+      default: myservice
+security:
+- apiKey: []
+tags:
+- name: Documents
+paths:
+  /indexes('{indexName}')/docs/search.index:
+    parameters:
+    - name: indexName
+      in: path
+      required: true
+      schema:
+        type: string
+    - name: api-version
+      in: query
+      required: true
+      schema:
+        type: string
+    post:
+      operationId: indexDocuments
+      summary: Search Index documents
+      description: Adds, merges, or deletes documents in an index.
+      tags:
+      - Documents
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                value:
+                  type: array
+                  items:
+                    type: object
+      responses:
+        '200':
+          description: Indexing result
+          content:
+            application/json:
+              schema:
+                type: object
+  /indexes('{indexName}')/docs:
+    parameters:
+    - name: indexName
+      in: path
+      required: true
+      schema:
+        type: string
+    - name: api-version
+      in: query
+      required: true
+      schema:
+        type: string
+    get:
+      operationId: searchDocuments
+      summary: Search Search documents
+      description: Searches documents in an index.
+      tags:
+      - Documents
+      parameters:
+      - name: search
+        in: query
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Search results
+          content:
+            application/json:
+              schema:
+                type: object
+components:
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: api-key
+externalDocs:
+  description: Azure AI Search REST API Documentation
+  url: https://learn.microsoft.com/en-us/rest/api/searchservice/
+x-generated-from: https://learn.microsoft.com/en-us/rest/api/searchservice/
+x-generated-by: claude-crawl-2026-05-08
