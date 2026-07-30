@@ -5,7 +5,20 @@ description: >-
   Azure AI Search (formerly Azure Cognitive Search) is a cloud search service with built-in AI capabilities for
   enriching content and enabling vector and semantic search over heterogeneous data. It indexes content from Azure data
   sources and supports full-text, faceted, geospatial, vector, and hybrid retrieval.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/microsoft-azure-search.png
 tags:
   - AI Search
   - Cognitive Search
@@ -17,47 +30,56 @@ created: '2026-03-13'
 modified: '2026-05-19'
 specificationVersion: '0.20'
 apis:
-  - aid: microsoft-azure-search:rest-api
-    name: Azure AI Search REST API
-    description: >-
-      Azure AI Search provides REST APIs for creating and managing search indexes, loading documents, running full-text
-      and vector queries, configuring AI enrichment pipelines with skillsets, and managing indexers for automatic data
-      ingestion from Azure data sources.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://learn.microsoft.com/en-us/rest/api/searchservice/
-    baseURL: https://{search-service}.search.windows.net/
-    tags:
-      - Indexers
-      - Indexes
-      - Search
-      - Skillsets
-      - Vector Search
-    properties:
-      - url: openapi/microsoft-azure-search-openapi.yml
-        type: OpenAPI
-      - type: Documentation
-        url: https://learn.microsoft.com/en-us/rest/api/searchservice/
-      - type: Authentication
-        url: https://learn.microsoft.com/en-us/azure/search/search-security-api-keys
-      - type: Versioning
-        url: https://learn.microsoft.com/en-us/rest/api/searchservice/search-service-api-versions
-  - aid: microsoft-azure-search:management-api
-    name: Azure AI Search Management REST API
-    description: >-
-      The management REST API provides operations for creating and managing Azure AI Search service instances, scaling
-      replicas and partitions, and managing keys and shared private link resources.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://learn.microsoft.com/en-us/rest/api/searchmanagement/
-    baseURL: https://management.azure.com/
-    tags:
-      - Management
-      - Provisioning
-      - Search
-    properties:
-      - type: Documentation
-        url: https://learn.microsoft.com/en-us/rest/api/searchmanagement/
-      - type: Authentication
-        url: https://learn.microsoft.com/en-us/azure/active-directory/develop/authentication-flows-app-scenarios
+- aid: microsoft-azure-search:management-api
+  name: Azure AI Search Management REST API
+  description: >-
+    The management REST API provides operations for creating and managing Azure AI Search service instances,
+    scaling replicas and partitions, and managing keys and shared private link resources.
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://learn.microsoft.com/en-us/rest/api/searchmanagement/
+  baseURL: https://management.azure.com/
+  tags:
+  - Management
+  - Provisioning
+  - Search
+  properties:
+  - type: Documentation
+    url: https://learn.microsoft.com/en-us/rest/api/searchmanagement/
+  - type: Authentication
+    url: >-
+      https://learn.microsoft.com/en-us/azure/active-directory/develop/authentication-flows-app-scenarios
+- aid: microsoft-azure-search:microsoft-azure-search-documents-api
+  name: Azure AI Search Documents API
+  description: The Documents API from Azure AI Search — 2 operation(s) for documents.
+  humanURL: https://learn.microsoft.com/en-us/rest/api/searchservice/
+  baseURL: https://{search-service}.search.windows.net/
+  tags:
+  - Documents
+  properties:
+  - type: OpenAPI
+    url: openapi/microsoft-azure-search-documents-api-openapi.yml
+  - type: Documentation
+    url: https://learn.microsoft.com/en-us/rest/api/searchservice/
+  - type: Authentication
+    url: https://learn.microsoft.com/en-us/azure/search/search-security-api-keys
+  - type: Versioning
+    url: https://learn.microsoft.com/en-us/rest/api/searchservice/search-service-api-versions
+- aid: microsoft-azure-search:microsoft-azure-search-indexes-api
+  name: Azure AI Search Indexes API
+  description: The Indexes API from Azure AI Search — 2 operation(s) for indexes.
+  humanURL: https://learn.microsoft.com/en-us/rest/api/searchservice/
+  baseURL: https://{search-service}.search.windows.net/
+  tags:
+  - Indexes
+  properties:
+  - type: OpenAPI
+    url: openapi/microsoft-azure-search-indexes-api-openapi.yml
+  - type: Documentation
+    url: https://learn.microsoft.com/en-us/rest/api/searchservice/
+  - type: Authentication
+    url: https://learn.microsoft.com/en-us/azure/search/search-security-api-keys
+  - type: Versioning
+    url: https://learn.microsoft.com/en-us/rest/api/searchservice/search-service-api-versions
 common:
   - type: AgenticAccess
     url: agentic-access/microsoft-azure-search-agentic-access.yml
