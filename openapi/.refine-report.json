@@ -1,0 +1,16 @@
+{
+  "provider": "microsoft-azure-search",
+  "sources": [
+    "microsoft-azure-search-documents-api-openapi.yml",
+    "microsoft-azure-search-indexes-api-openapi.yml"
+  ],
+  "outputs": [
+    "microsoft-azure-search-documents-api-openapi.yml",
+    "microsoft-azure-search-indexes-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
