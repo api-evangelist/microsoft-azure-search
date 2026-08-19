@@ -1,0 +1,139 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Azure AI Search REST Documents Indexes API",
+    "version": "2024-07-01"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "api-key",
+      "value": "{{api-key}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Indexes",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Search List indexes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{search-service}.search.windows.net/indexes",
+            "params": [
+              {
+                "name": "api-version",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Lists all indexes."
+        },
+        {
+          "info": {
+            "name": "Search Create index",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://{search-service}.search.windows.net/indexes",
+            "params": [
+              {
+                "name": "api-version",
+                "value": "",
+                "type": "query"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Creates a new search index."
+        },
+        {
+          "info": {
+            "name": "Search Get index",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{search-service}.search.windows.net/indexes(':indexName')",
+            "params": [
+              {
+                "name": "indexName",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "api-version",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Gets index definition."
+        },
+        {
+          "info": {
+            "name": "Search Create or update index",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://{search-service}.search.windows.net/indexes(':indexName')",
+            "params": [
+              {
+                "name": "indexName",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "api-version",
+                "value": "",
+                "type": "query"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Creates or updates an index."
+        },
+        {
+          "info": {
+            "name": "Search Delete index",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://{search-service}.search.windows.net/indexes(':indexName')",
+            "params": [
+              {
+                "name": "indexName",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "api-version",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Deletes an index."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

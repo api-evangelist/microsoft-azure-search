@@ -1,0 +1,81 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Azure AI Search REST Documents API",
+    "version": "2024-07-01"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "api-key",
+      "value": "{{api-key}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Documents",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Search Index documents",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://{search-service}.search.windows.net/indexes(':indexName')/docs/search.index",
+            "params": [
+              {
+                "name": "indexName",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "api-version",
+                "value": "",
+                "type": "query"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Adds, merges, or deletes documents in an index."
+        },
+        {
+          "info": {
+            "name": "Search Search documents",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{search-service}.search.windows.net/indexes(':indexName')/docs",
+            "params": [
+              {
+                "name": "indexName",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "api-version",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "search",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Searches documents in an index."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
