@@ -94,6 +94,8 @@ apis:
   - type: Versioning
     url: https://learn.microsoft.com/en-us/rest/api/searchservice/search-service-api-versions
 common:
+  - type: Website
+    url: https://www.microsoft.com/
   - type: AgenticAccess
     url: agentic-access/microsoft-azure-search-agentic-access.yml
   - type: DomainSecurity
@@ -127,3 +129,5 @@ common:
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
+x-parent: microsoft-azure
+x-relationship: product
