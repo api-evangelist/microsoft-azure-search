@@ -1,5 +1,5 @@
 aid: microsoft-azure-search
-url: https://raw.githubusercontent.com/api-evangelist/microsoft-azure-search/refs/heads/main/apis.yml
+url: https://learn.microsoft.com/en-us/azure/search/
 name: Azure AI Search
 description: >-
   Azure AI Search (formerly Azure Cognitive Search) is a cloud search service with built-in AI capabilities for
