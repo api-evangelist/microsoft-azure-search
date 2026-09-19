@@ -83,6 +83,8 @@ apis:
   humanURL: https://learn.microsoft.com/en-us/rest/api/searchservice/
   baseURL: https://{search-service}.search.windows.net/
   tags:
+  - Index
+  tags_raw:
   - Indexes
   properties:
   - type: OpenAPI
