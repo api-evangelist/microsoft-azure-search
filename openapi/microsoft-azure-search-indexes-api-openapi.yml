@@ -1,6 +1,6 @@
 openapi: 3.2.0
 info:
-  title: Azure AI Search REST Documents Indexes API
+  title: Azure AI Search REST Indexes API
   description: Azure AI Search (formerly Cognitive Search) REST API enables managing indexes, indexers, data sources, skillsets, synonym maps, and querying documents.
   version: '2024-07-01'
 servers:

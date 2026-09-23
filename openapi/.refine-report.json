@@ -1,8 +1,7 @@
 {
   "provider": "microsoft-azure-search",
   "sources": [
-    "microsoft-azure-search-documents-api-openapi.yml",
-    "microsoft-azure-search-indexes-api-openapi.yml"
+    "_ae-authored/microsoft-azure-search-openapi.yml"
   ],
   "outputs": [
     "microsoft-azure-search-documents-api-openapi.yml",
@@ -12,9 +11,12 @@
   "errors": [],
   "warnings": [],
   "notes": [
-    "microsoft-azure-search-documents-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
-    "microsoft-azure-search-indexes-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "microsoft-azure-search-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
     "apis.yml register: already-registered"
   ],
-  "skipped": []
+  "skipped": [
+    "microsoft-azure-search-documents-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "microsoft-azure-search-indexes-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
