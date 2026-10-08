@@ -96,6 +96,12 @@ apis:
   - type: Versioning
     url: https://learn.microsoft.com/en-us/rest/api/searchservice/search-service-api-versions
 common:
+  - type: Plans
+    url: plans/microsoft-azure-search-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/microsoft-azure-search-rate-limits.yml
+  - type: FinOps
+    url: finops/microsoft-azure-search-finops.yml
   - type: Website
     url: https://www.microsoft.com/
   - type: AgenticAccess
